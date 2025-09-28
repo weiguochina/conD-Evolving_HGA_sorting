@@ -55,8 +55,7 @@ rename_geometry <- function(g, name){
 
 # assessment data
 
-setwd(paste0(data_folder,"/texas_a_m_galveston_property_basic_res2_300000423089087_20220916_085147_data"))
-asmt <- fread("texas_a_m_galveston_property_basic_res2_300000423089087_20220916_085147_data.txt") 
+asmt <- fread("asmt.txt") 
 asmt <- asmt %>%
   select(CLIP, `OWNER 1 LAST NAME`, `PARCEL LEVEL LATITUDE`, `PARCEL LEVEL LONGITUDE`,
          `OWNER 1 CORPORATE INDICATOR`, `FIPS CODE`, `MARKET TOTAL VALUE`)
@@ -400,3 +399,4 @@ asmt_flood <- asmt_sf %>%
   select(-geometry)
 setwd(data_folder)
 write_fst(asmt_flood, "asmt_floodmap_corrected.fst")
+
