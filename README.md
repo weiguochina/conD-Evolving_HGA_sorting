@@ -18,9 +18,11 @@ leafem 0.2.0, colorspace 2.0-3, deldir 1.0-6, class 7.3-20, leaflet 2.2.0, satel
 
 ### Data Pre-processing
 
-Because CoreLogic data are proprietary, we cannot share them. Note that the raw data may contain inaccurate property coordinates. We therefore conduct a geocoding process to improve spatial accuracy.
+Because CoreLogic data are proprietary, we cannot share them. We recommend contacting the data licensing team at CoreLogic to accress the **deed sales** and **assesssment history** datasets, from 1995 to the most recent available records in Harris County, Texas.
 
-After geocoding, save the output as property_sales_2010_2022.dta before proceeding to the analysis.
+Note that the raw data may contain inaccurate property coordinates. We therefore conduct a geocoding process to improve spatial accuracy.
+
+After geocoding, save the the deed sales data as property_sales_2010_2022.dta and the assessment history data as asmt.txt, both in the ./data folder, before proceeding to the analysis.
 
 ### Performing Sorting Model
 
